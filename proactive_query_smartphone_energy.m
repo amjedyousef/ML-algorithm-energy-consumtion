@@ -2,10 +2,11 @@ clear;
 close;
 clc;
 %labels
-l = {1,2,4,8,16,64,128};
+%l = {1,2,4,8,16,64,128};
+l={1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39};
 %%
 %energy calculations
-m = load('data_wifi.txt');
+m = load('wifi_step_2_.txt');
 e = m(:,4); % Extract only the energy column
 t = m(:,2); % Extract only the time column
 t = t/1000; % convert from milliseconds to seconds
